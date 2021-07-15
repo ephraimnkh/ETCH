@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ETCH | Downloads</title>
+		<link rel="stylesheet" href="etch.css">
+		<script src="etch.js"></script>
+		<link rel="icon" href="Favicon/favicon.ico"/>
+		<a name="roof"></a> <!--since #top (CSS code) has position:fixed the regular <a href="#top" class="button">does not work so need to create a new anchor to have top of page functioning-->
+	</head>
+	<div id="container">
+		<div id="top">
+			<div id="edit"><a href="index.html"><img src="etch.png" align="left"></a></div>
+			<nav>
+					<a href="about.html" class="button">About Us</a>
+					<a href="download.html" class="button">Downloads</a>
+					<a href="FAQ.html" class="button">FAQ</a>
+			</nav>
+		</div>
+			<hed>Downloads</hed>
+		<div class="body">
+			<alternate></alternate>
+			<regular>
+				<p>
+					<h2 id="download">Select your device type for download link</h2>
+					<img src="favicon-96x96.png" style="height: 10vw; width: 10vw; min-width: 70px; max-width: 100px; min-height:70px; max-height:100px;border: 1px solid #cc0000; border-radius:20px;" title="ETCH - Messenger">
+				</p>
+				<img src="iPhone.jpg" style="height: 20vw; width: 10vw; min-width: 70px; max-width: 85px; min-height:140px; max-height:170px; margin: 30px 30px 30px 30px" onclick="popiOS()" title="iOS">
+				<img src="phone.jpg" style="height: 20vw; width: 10vw; min-width: 70px; max-width: 85px; min-height:140px; max-height:170px; margin: 30px 30px 30px 30px" onclick="popDroid()"title="Android">
+				<img src="winp.jpg" style="height: 19vw; width: 12vw; min-width: 84px; max-width: 102px; min-height: 134px; max-height:160px; margin: 30px 30px 30px 30px" onclick="popWin()" title="Windows Phone">
+				<img id="hidden" src="pc.png" style="height: 21.5vw; width: 30vw; min-width: 210px; max-width: 253px; min-height:148px; max-height: 182px; margin: 30px 30px 30px 30px;" onclick="popPC()" title="PC">
+			</regular>
+		</div>
+		<div class="footer" id="hidden">
+			<nav>
+				<ul>
+					<a href="#roof" class="button">Top of the page</a>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</html>

@@ -1,0 +1,868 @@
+/*HTML tags*/
+html,
+body { /*body needed even if no body tag used as the code automatically picks up the body and helps setting footer at bottom*/
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden; /*to stop the container from scrolling horizontally*/
+}
+
+a:link {
+	text-decoration: none;
+}
+section {
+	position:relative;
+	left:50px;
+	width:70%; /*allows homepage text to shrink to 50% of the new width when percentage is used*/
+}
+
+textarea {
+	border: 1px solid;
+	background-color: #cc0000;
+	color: #ffffff;
+}
+p {
+    	font-family: "Arial";
+    	font-size: 15px;
+}
+
+/*Classes*/
+.footer ul {
+	padding: 0; /*used to make footer button appear close to the left of the footer*/
+}
+.footer {
+	background-color:#cc0000;
+	color:#ffffff;
+	font-family: Arial;
+	font-size: 10px;
+	padding: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 35px;
+}
+.about {
+    	color: #cc0000;
+    	text-align: left;
+    	font-family: Arial;
+    	display: block;
+	background-color: #ffffff;
+	padding: 0px;
+	padding-top: 80px; /*This padding is to make sure that the content of the page does not end up underneath the top fixed banner by pushing the text down so when the top banner becomes fixed the content appears at an appropriate length from the banner*/
+	padding-left: 10px;
+}
+.button {
+	background-color: #ffffff;
+	color: #cc0000;
+	border: 1.5px solid #fff; /*made this border statement match the hover border statement so that the page doesn't move while adding the hover border*/
+	padding: 15px 30px;
+	font-family: Arial;
+	font-size: 10px;
+	border-radius: 12px;
+	margin: 15px 15px;
+}
+.button1 {
+	background-color: #cc0000;
+	color: #ffffff;
+	border: 1px solid #fff;
+	padding: 15px 30px;
+	font-family: Arial;
+	font-size: 10px;
+	border-radius: 12px;
+	margin: 15px 15px;
+}
+.button:hover {
+	background-color: #c00;
+	color: #ffffff;
+	transition-duration: 0.5s;
+	border: 1.5px solid #fff;
+}
+.button1:hover {
+	background-color: #ffffff;
+	color: #cc0000;
+	border: 1px solid #c00;
+	transition-duration: 0.5s;
+}
+
+/*IDs*/
+#container {
+	min-height: 100%;
+	position: relative; /*keeps footer at bottom when it is set to absolute*/
+}
+#top {
+	position: fixed;
+	width: 100%;
+	z-index: 1; /*z-index is used to specify the importance of a specific element so by making it one it remains above all other elements and nothing can be seen behind the element when there is content behind it*/
+	top: 0;
+	left: 0;
+	/*height: 110px;*/
+  background-color: #cc0000;
+  padding: 10px;
+  font-size: 12px;
+	color: #ffffff;
+	font-family: Arial;
+	text-align: left;
+	display: block;
+}
+
+#top img {
+	width: 300px;
+	height: 70px;
+}
+
+#top nav {
+	margin-top: 20px;
+}
+#shiftRight {
+	margin-left: 10px;
+}
+#shiftUp {
+	margin-bottom: 53px;
+}
+
+/*Created tags*/
+hed {
+	color: #cc0000;
+	text-align: left;
+	font-family: monospace; /*This is the font of kbd*/
+	display: block;
+	background-color: #ffffff;
+	font-size: 30px;
+	padding: 100px 0px 20px 10px;
+	width: 100%;
+	font-weight: bold;
+}
+alternate {
+	display: block;
+  background-color: #cc0000;
+  padding: 10px;
+	margin: 0px 10px;
+  font-size: 12px;
+	color: #ffffff;
+	font-family: Arial;
+	text-align: left;
+}
+regular {
+	display: block;
+	background-color: #ffffff;
+	padding:10px 15px 10px 15px;
+	font-size: 12px;
+	color: #cc0000;
+	font-family: Arial;
+	text-align: left;
+  }
+
+FAQ {
+	border: 10px solid #cc0000;
+	display: block;
+	padding: 0px 10px 10px 10px;
+	background-color:#cc0000;
+	font-size: 15px;
+	font-family: Arial;
+	color:white;
+	left:50px;
+	width:70%;
+	margin: auto; /*Makes FAQ text appear in the center of the page*/
+}
+Contact {
+	border: 3px solid #cc0000;
+	display: block;
+	padding: 10px;
+	font-size: 15px;
+	font-family: Arial;
+	text-align: center;
+	left:50px;
+	width:280px;
+	padding-left: 10px;
+}
+
+@media screen and (max-width: 697px) {/*css for smaller screen*/
+
+	/*HTML tags*/
+	html,
+	body { /*body needed even if no body tag used as the code automatically picks up the body and helps setting footer at bottom*/
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden; /*to stop the container from scrolling horizontally*/
+		min-width: 584px;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+	section {
+		position:relative;
+		left:50px;
+		width:70%; /*allows homepage text to shrink to 50% of the new width when percentage is used*/
+	}
+
+	textarea {
+		border: 1px solid;
+		background-color: #cc0000;
+		color: #ffffff;
+	}
+	p {
+	    	font-family: "Arial";
+	    	font-size: 15px;
+	}
+
+	/*Classes*/
+	.footer ul {
+		padding: 0; /*used to make footer button appear close to the left of the footer*/
+	}
+	.footer {
+		background-color:#cc0000;
+		color:#ffffff;
+		font-family: Arial;
+		font-size: 10px;
+		padding: 10px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		height: 30px;
+	}
+	.about {
+	    	color: #cc0000;
+	    	text-align: left;
+	    	font-family: Arial;
+	    	display: block;
+		background-color: #ffffff;
+		padding: 0px;
+		padding-top: 80px; /*This padding is to make sure that the content of the page does not end up underneath the top fixed banner by pushing the text down so when the top banner becomes fixed the content appears at an appropriate length from the banner*/
+		padding-left: 10px;
+	}
+	.button {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1.5px solid #fff; /*made this border statement match the hover border statement so that the page doesn't move while adding the hover border*/
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 10px;
+		border-radius: 12px;
+		margin: 15px 15px;
+	}
+	.button1 {
+		background-color: #cc0000;
+		color: #ffffff;
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 10px;
+		border-radius: 12px;
+		margin: 15px 15px;
+	}
+	.button:hover {
+		background-color: #c00;
+		color: #ffffff;
+		transition-duration: 0.5s;
+		border: 1.5px solid #fff;
+	}
+	.button1:hover {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1px solid #c00;
+		transition-duration: 0.5s;
+	}
+
+	/*IDs*/
+	#container {
+		min-height: 100%;
+		position: relative; /*keeps footer at bottom when it is set to absolute*/
+	}
+	#top {
+		position: fixed;
+		z-index: 1; /*z-index is used to specify the importance of a specific element so by making it one it remains above all other elements and nothing can be seen behind the element when there is content behind it*/
+	  background-color: #cc0000;
+	}
+	#edit {
+		display: inline-block;
+		margin: auto;
+		padding-left: 29vw;
+	}
+	#top nav{
+		display: inline-block;
+		margin: auto;
+		padding-top: 10px;
+		padding-left: 26vw;
+		padding-bottom: 10px;
+	}
+	#shiftRight {
+		margin-left: 10px;
+	}
+	#shiftUp {
+		margin-bottom: 70px;
+	}
+
+	/*Created tags*/
+	hed {
+		color: #cc0000;
+		font-family: monospace; /*This is the font of kbd*/
+		display: inline-block;
+		background-color: #ffffff;
+		font-size: 25px;
+		padding: 140px 0px 20px 10px;
+		font-weight: bold;
+		text-align: left;
+		width: 100%;
+	}
+	alternate {
+		display: block;
+	  background-color: #cc0000;
+	  padding: 10px;
+		margin: 0 10px;
+	  font-size: 12px;
+		color: #ffffff;
+		font-family: Arial;
+		text-align: left;
+	}
+	regular {
+		display: block;
+		background-color: #ffffff;
+		padding:10px 15px 10px 15px;
+		font-size: 12px;
+		color: #cc0000;
+		font-family: Arial;
+		text-align: left;
+	  }
+
+	FAQ {
+		border: 10px solid #cc0000;
+		display: block;
+		padding: 0px 10px 10px 10px;
+		background-color:#cc0000;
+		font-size: 15px;
+		font-family: Arial;
+		color:white;
+		left:50px;
+		width:70%;
+		margin: auto; /*Makes FAQ text appear in the center of the page*/
+	}
+	Contact {
+		border: 3px solid #cc0000;
+		display: block;
+		padding: 10px;
+		font-size: 15px;
+		font-family: Arial;
+		text-align: center;
+		left:50px;
+		width:280px;
+		padding-left: 10px;
+	}
+}
+@media screen and (max-width: 584px) {/*css for smaller screen*/
+	/*HTML tags*/
+	html,
+	body { /*body needed even if no body tag used as the code automatically picks up the body and helps setting footer at bottom*/
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden; /*to stop the container from scrolling horizontally*/
+		min-width: 490px;
+	}
+	h2 {
+		text-align: center;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+	section {
+		position:relative;
+		left:50px;
+		width:70%; /*allows homepage text to shrink to 50% of the new width when percentage is used*/
+	}
+
+	textarea {
+		border: 1px solid;
+		background-color: #cc0000;
+		color: #ffffff;
+	}
+	p {
+	    	font-family: "Arial";
+	    	font-size: 15px;
+	}
+
+	/*Classes*/
+	.footer ul {
+		padding: 0; /*used to make footer button appear close to the left of the footer*/
+	}
+	.footer {
+		background-color:#cc0000;
+		color:#ffffff;
+		font-family: Arial;
+		font-size: 10px;
+		padding: 10px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		height: 35px;
+	}
+	.about {
+	    	color: #cc0000;
+	    	text-align: left;
+	    	font-family: Arial;
+	    	display: block;
+		background-color: #ffffff;
+		padding: 0px;
+		padding-top: 80px; /*This padding is to make sure that the content of the page does not end up underneath the top fixed banner by pushing the text down so when the top banner becomes fixed the content appears at an appropriate length from the banner*/
+		padding-left: 10px;
+	}
+	.button {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1.5px solid #fff; /*made this border statement match the hover border statement so that the page doesn't move while adding the hover border*/
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 10px;
+		border-radius: 12px;
+		margin: 15px 15px;
+	}
+	.button1 {
+		background-color: #cc0000;
+		color: #ffffff;
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 10px;
+		border-radius: 12px;
+		margin: 15px 15px;
+	}
+	.button:hover {
+		background-color: #c00;
+		color: #ffffff;
+		transition-duration: 0.5s;
+		border: 1.5px solid #fff;
+	}
+	.button1:hover {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1px solid #c00;
+		transition-duration: 0.5s;
+	}
+
+	/*IDs*/
+	#container {
+		min-height: 100%;
+		position: relative; /*keeps footer at bottom when it is set to absolute*/
+	}
+	#top {
+		position: fixed;
+		z-index: 1; /*z-index is used to specify the importance of a specific element so by making it one it remains above all other elements and nothing can be seen behind the element when there is content behind it*/
+	  background-color: #cc0000;
+	}
+	#edit {
+		display: inline-block;
+		margin: auto;
+		padding-left: 23vw;
+	}
+	#top nav{
+		display: inline-block;
+		margin: auto;
+		padding-top: 10px;
+		padding-left: 20vw;
+		padding-bottom: 10px;
+	}
+	#shiftRight {
+		margin-left: 10px;
+	}
+	#shiftUp {
+		margin-bottom: 70px;
+	}
+
+	/*Created tags*/
+	hed {
+		color: #cc0000;
+		text-align: left;
+		font-family: monospace; /*This is the font of kbd*/
+		display: block;
+		background-color: #ffffff;
+		font-size: 25px;
+		padding: 140px 0px 20px 10px;
+		width: 100%;
+		font-weight: bold;
+		margin: auto;
+	}
+	alternate {
+		display: block;
+	  background-color: #cc0000;
+	  padding: 10px;
+		margin: auto;
+	  font-size: 12px;
+		color: #ffffff;
+		font-family: Arial;
+		text-align: left;
+	}
+	regular {
+		display: block;
+		background-color: #ffffff;
+		padding:10px 15px 10px 15px;
+		font-size: 12px;
+		color: #cc0000;
+		font-family: Arial;
+		text-align: left;
+		margin: auto;
+	  }
+
+	FAQ {
+		border: 10px solid #cc0000;
+		display: block;
+		padding: 0px 10px 10px 10px;
+		background-color:#cc0000;
+		font-size: 15px;
+		font-family: Arial;
+		color:white;
+		left:50px;
+		width:70%;
+		margin: auto; /*Makes FAQ text appear in the center of the page*/
+	}
+	Contact {
+		border: 3px solid #cc0000;
+		display: block;
+		padding: 10px 10px 0px 10px;
+		font-size: 15px;
+		font-family: Arial;
+		text-align: center;
+		width:280px;
+	}
+}
+@media screen and (max-width: 490px) {/*css for smaller screen*/
+	/*HTML tags*/
+	html,
+	body { /*body needed even if no body tag used as the code automatically picks up the body and helps setting footer at bottom*/
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden; /*to stop the container from scrolling horizontally*/
+		min-width: 480px;
+	}
+	h2 {
+		text-align: center;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+	section {
+		position:relative;
+		left:50px;
+		width:70%; /*allows homepage text to shrink to 50% of the new width when percentage is used*/
+	}
+
+	textarea {
+		border: 1px solid;
+		background-color: #cc0000;
+		color: #ffffff;
+	}
+	p {
+	    	font-family: "Arial";
+	    	font-size: 15px;
+	}
+
+	/*Classes*/
+	.footer ul {
+		padding: 0; /*used to make footer button appear close to the left of the footer*/
+	}
+	.footer {
+		background-color:#cc0000;
+		color:#ffffff;
+		font-family: Arial;
+		font-size: 10px;
+		padding: 10px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		height: 35px;
+	}
+	.about {
+	    	color: #cc0000;
+	    	text-align: left;
+	    	font-family: Arial;
+	    	display: block;
+		background-color: #ffffff;
+		padding: 0px;
+		padding-top: 80px; /*This padding is to make sure that the content of the page does not end up underneath the top fixed banner by pushing the text down so when the top banner becomes fixed the content appears at an appropriate length from the banner*/
+		padding-left: 10px;
+	}
+	.button {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1.5px solid #fff; /*made this border statement match the hover border statement so that the page doesn't move while adding the hover border*/
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 10px;
+		border-radius: 12px;
+		margin: 15px 15px;
+	}
+	.button1 {
+		background-color: #cc0000;
+		color: #ffffff;
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 10px;
+		border-radius: 12px;
+		margin: 15px 15px;
+	}
+	.button:hover {
+		background-color: #c00;
+		color: #ffffff;
+		transition-duration: 0.5s;
+		border: 1.5px solid #fff;
+	}
+	.button1:hover {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1px solid #c00;
+		transition-duration: 0.5s;
+	}
+
+	/*IDs*/
+	#container {
+		min-height: 100%;
+		position: relative; /*keeps footer at bottom when it is set to absolute*/
+	}
+	#top {
+		position: fixed;
+		z-index: 1; /*z-index is used to specify the importance of a specific element so by making it one it remains above all other elements and nothing can be seen behind the element when there is content behind it*/
+	  background-color: #cc0000;
+	}
+	#edit {
+		display: inline-block;
+		margin: auto;
+		padding-left: 15vw;
+	}
+	#top nav{
+		display: inline-block;
+		margin: auto;
+		padding-top: 10px;
+		padding-left: 15vw;
+		padding-bottom: 10px;
+	}
+	#shiftRight {
+		margin-left: 10px;
+	}
+	#shiftUp {
+		margin-bottom: 70px;
+	}
+
+	/*Created tags*/
+	hed {
+		color: #cc0000;
+		text-align: center;
+		font-family: monospace; /*This is the font of kbd*/
+		display: block;
+		background-color: #ffffff;
+		font-size: 18px;
+		padding: 140px 0px 20px 10px;
+		width: 100%;
+		font-weight: bold;
+		margin: auto;
+	}
+	alternate {
+		display: block;
+	  background-color: #cc0000;
+	  padding: 10px;
+		margin: auto;
+	  font-size: 12px;
+		color: #ffffff;
+		font-family: Arial;
+		text-align: left;
+	}
+	regular {
+		display: block;
+		background-color: #ffffff;
+		padding:10px 15px 10px 15px;
+		font-size: 12px;
+		color: #cc0000;
+		font-family: Arial;
+		text-align: left;
+		margin: auto;
+	  }
+
+	FAQ {
+		border: 10px solid #cc0000;
+		display: block;
+		padding: 0px 10px 10px 10px;
+		background-color:#cc0000;
+		font-size: 15px;
+		font-family: Arial;
+		color:white;
+		left:50px;
+		width:70%;
+		margin: auto; /*Makes FAQ text appear in the center of the page*/
+	}
+	Contact {
+		border: 3px solid #cc0000;
+		display: block;
+		padding: 10px 10px 0px 10px;
+		font-size: 15px;
+		font-family: Arial;
+		text-align: center;
+		width:280px;
+	}
+}
+@media only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5) {/*css for smaller screen*/
+	/*HTML tags*/
+	html,
+	body { /*body needed even if no body tag used as the code automatically picks up the body and helps setting footer at bottom*/
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		overflow-x: scroll;
+	}
+	h2 {
+		text-align: center;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+	section {
+		position:relative;
+		width:90%; /*allows homepage text to shrink to 50% of the new width when percentage is used*/
+	}
+
+	textarea {
+		border: 1px solid;
+		background-color: #cc0000;
+		color: #ffffff;
+		width: 65%;
+		height: 200px;
+		margin-bottom: 30px;
+		font-size: 32px;
+	}
+	p {
+	    	font-family: "Arial";
+	    	font-size: 20px;
+	}
+	input {
+		width: 65%;
+		height: 50px;
+		font-size: 32px;
+		display: block;
+		margin: auto;
+	}
+
+	/*Classes*/
+	.button {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1.5px solid #fff; /*made this border statement match the hover border statement so that the page doesn't move while adding the hover border*/
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 30px;
+		border-radius: 12px;
+		margin: 15px 15px;
+	}
+	.button1 {
+		background-color: #cc0000;
+		color: #ffffff;
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		font-family: Arial;
+		font-size: 40px;
+		height: 80px;
+		border-radius: 12px;
+		display: block;
+		margin: auto;
+	}
+	.button:hover {
+		background-color: #c00;
+		color: #ffffff;
+		transition-duration: 0.1s;
+		border: 1.5px solid #fff;
+	}
+	.button1:hover {
+		background-color: #ffffff;
+		color: #cc0000;
+		border: 1px solid #c00;
+		transition-duration: 0.1s;
+	}
+
+	/*IDs*/
+	#hidden {
+		visibility: hidden;
+	}
+	#container {
+		min-height: 100%;
+		position: relative; /*keeps footer at bottom when it is set to absolute*/
+		padding: 0 10px 0 10px;
+	}
+	#top {
+		position: fixed;
+		z-index: 1; /*z-index is used to specify the importance of a specific element so by making it one it remains above all other elements and nothing can be seen behind the element when there is content behind it*/
+	  background-color: #cc0000;
+		height: 150px;
+	}
+	#edit {
+		padding-left: 270px;
+	}
+	#edit img {
+		width: 400px;
+		height: 90px;
+	}
+	#top nav{
+		display: block;
+		padding: 90px 0 10px 200px;
+	}
+	#shiftRight {
+		margin-left: 10px;
+	}
+	#shiftUp {
+		margin-bottom: 0px;
+	}
+
+	/*Created tags*/
+	hed {
+		color: #cc0000;
+		font-family: monospace; /*This is the font of kbd*/
+		text-align: center;
+		background-color: #ffffff;
+		font-size: 35px;
+		padding: 190px 0px 20px 100px;
+		font-weight: bold;
+		width:80%;
+	}
+	alternate {
+		display: block;
+	  background-color: #cc0000;
+		margin: auto;
+	  font-size: 12px;
+		color: #ffffff;
+		font-family: Arial;
+		text-align: justify;
+	}
+	regular {
+		display: block;
+		background-color: #ffffff;
+		padding:10px 15px 10px 0px;
+		font-size: 15px;
+		color: #cc0000;
+		font-family: Arial;
+		text-align: justify;
+		margin: auto;
+	  }
+
+	FAQ {
+		border: 10px solid #cc0000;
+		display: block;
+		padding: 0px 10px 10px 10px;
+		background-color:#cc0000;
+		font-size: 15px;
+		font-family: Arial;
+		color:white;
+		left:50px;
+		width:70%;
+		margin: auto; /*Makes FAQ text appear in the center of the page*/
+	}
+	Contact {
+		border: 3px solid #cc0000;
+		display: block;
+		padding: 10px 10px 30px 0px;
+		font-size: 40px;
+		font-family: Arial;
+		text-align: center;
+		width:100%;
+	}
+}

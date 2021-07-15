@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ETCH | About Us</title>
+		<link rel="stylesheet" href="etch.css" type="text/css">
+		<script src="etch.js"></script>
+		<!--This is how you make a anchor for a link to go to a certain location on the page all you need to do is use the anchor tag <a> with the name you wanna give the location then you make another anchor with the link #nameofanchor <a name="top"></a-->
+		<link rel="icon" href="Favicon/favicon.ico"/>
+		<a name="roof"></a> <!--since #top (CSS code) has position:fixed the regular <a href="#top" class="button">does not work so need to create a new anchor to have top of page functioning-->
+	</head>
+	<div id="container">
+		<div id="top">
+			<div id="edit"><a href="index.html"><img src="etch.png" align="left"></a></div>
+			<nav>
+					<a href="about.html" class="button">About Us</a>
+					<a href="download.html" class="button">Downloads</a>
+					<a href="FAQ.html" class="button">FAQ</a>
+			</nav>
+		</div>
+			<hed>About Us</hed>
+		<div class="body">
+		<alternate>
+			<section>
+				<p>
+					Thank you for visting this section of the website this means you are interested in getting to know the
+					creators of <i>ETCH - Messenger</i>.<br><br>
+					We are a team under <i>MiEnd Inc</i> our parent company and we are currently we are based in South 						Africa. We are a passionate group of developers varying in age from late teens to late 20s and we are serious about creating services that are used daily such as <i>ETCH</i>, our slogan like our parent company is <i>Done Best<sup>TM</sup></i> meaning that whatever is being done has to be
+					done to the best of the abilities of the team, so that you as the end user are extremely satisfied.<br>
+				 	ETCH - Messenger is one of the products we are most proud of as we worked very long and hard on it, the idea for the app came about when some <i>MiEnd Inc</i> employees were tired of switching through many different apps just to find out what the same people are doing on each one, that's when
+				 	<i>ETCH - Messenger</i> was born.
+				 	As a team we love social networking just as much as you do and therefore since you love it we believe
+				 	you want to improve your social networking experience so why not drop some suggestions for
+				 	<i>ETCH</i> at our team email address: <a href="mailto:etchers931@gmail.com" target="_self" style="color:#fff"><address >etchers931@gmail.com</address></a><br>
+				 	Just enter your details below. We'll try to make sure the app maintains Social Networking | Done Best<sup>TM</sup>
+				</p>
+			</section>
+		</alternate>
+		<regular id="shiftUp">
+			<Contact>
+			<h3>Contact Us</h3>
+				<form name="contactus" onsubmit="return checkForm()" autocomplete="on" novalidate>
+						<br>
+						<b>First name:</b><br>
+						<input type="text" name="firstname" size="31" style="background-color:#cc0000; color:#ffffff; border: #ffffff;
+						border-radius: 12px; padding:5px;">
+						<br><br>
+						<b>Last name:</b><br>
+						<input type="text" name="lastname" size="31" style="background-color:#cc0000; color:#ffffff; border: #ffffff;
+						border-radius: 12px; padding: 5px;">
+						<br><br>
+						<b>Email:</b><br>
+						<input id="e" type="email" name="email" size="31" style="background-color:#cc0000; color: #ffffff;
+						border: #ffffff; border-radius: 12px; padding: 5px;">
+						<br><br>
+						<b>Suggestion:</b><br>
+						<textarea name="message" rows="5" cols="30" style="border-radius: 12px; padding:5px"></textarea><br>
+						<input type="submit" name="submit" value="Send Suggestions" class="button1" onclick="checkEmail()"><!--input type="submit" name="submit" value="Send Suggestions" class="button1" onclick="return checkForm(); checkEmail()" This onclick is the different shows how you can use 2 functions in one button click-->
+				</form>
+			</Contact>
+		</regular>
+		<br>
+	</div>
+	<div class="footer" id="hidden">
+		<nav>
+			<ul>
+				<a href="#roof" class="button">Top of the page</a>
+			</ul>
+		</nav>
+	</div>
+	</div>
+</html>
